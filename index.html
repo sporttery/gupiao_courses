@@ -120,9 +120,19 @@
                 <div class="item-header-box t3 c2 clearfix"><span class="t1 c2" style="float: left;" id="cursorTitle">女王视频播放</span><span style="float: right;"><a href="javascript:void(0)" onclick="closePlay()">关闭视频</a></span></div>
             </div>
             <script>
-                var player ,player_hide = true;
+                var player ,player_hide = true,autoplaylist=true;
                 function play(play_url,title){
-                    
+                    if(autoplaylist===true){
+                        autoplaylist = setInterval(()=>{
+                            if(player.getStatus() == "ended" && player.getSourceUrl() != ""){
+                                playlistComponent = player.getComponent("PlaylistComponent");
+                                defaultPlayIndex = playlistComponent.playingVideoIndex +1;
+                                if( defaultPlayIndex < playlistComponent.playlist.length){
+                                    playlistComponent.playVideo(player,defaultPlayIndex);
+                                }
+                            }
+                        },2000);
+                    }
                     if(player_hide){
                         $(".columnist-head-pic-div").hide().next().hide().next().hide();
                         $("#player-con").show().next().show().next().show();
