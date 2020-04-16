@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<link rel="shortcut icon" href="http://pc-shop.xiaoe-tech.com/img/home_index/icon_Live.png">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<title>女王交易系统课-播放视频</title>
+<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.8/skins/default/aliplayer-min.css" />
+<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.8.8/aliplayer-min.js"></script>
+</head>
+<body>
+<div class="prism-player" id="player-con"></div>
+<script>
+    var play_url = location.href.split("play_url=")[1].split("&")[0];
+    play_url = decodeURIComponent(play_url);
+    var title = location.href.split("title=")[1].split("&")[0];
+    title = decodeURIComponent(title);
+    document.title = title;
+var player = new Aliplayer({
+  "id": "player-con",
+  "source": play_url,
+  "width": "100%",
+  "height": (window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth)*11/16 + "px" ,
+  "autoplay": true,
+  "isLive": false,
+  "cover": "",
+  "rePlay": false,
+  "playsinline": true,
+  "preload": true,
+  "controlBarVisibility": "hover",
+  "useH5Prism": true
+}, function (player) {
+    console.log("The player is created");
+  }
+);
+</script>
+</body>

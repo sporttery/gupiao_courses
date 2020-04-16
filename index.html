@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" style="height: 100%; font-size: 50px;" crosspilot=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>女王交易系统课</title>
+            <link rel="shortcut icon" href="http://pc-shop.xiaoe-tech.com/img/home_index/icon_Live.png">
+    <style media="screen">
+        body{
+            background-color: #69696B;
+        }
+    </style>
+
+        
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    function isMobile() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+                    "SymbianOS", "Windows Phone",
+                    "iPad", "iPod"];
+        var flag = false;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = true;
+                break;
+            }
+        }
+        return flag;
+    }
+    //if (isMobile()) { // 手机浏览器
+    if (false) { // 手机浏览器
+        var htmlDom = document.documentElement;
+        var windowWidth = htmlDom.clientWidth;
+        var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+        htmlDom.style.fontSize = windowWidth / 7.5 + 'px';
+        (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+                if(!htmlDom.style.fontSize){
+                    var htmlDomProtect = document.documentElement;
+                    var windowWidth = htmlDomProtect.clientWidth;
+                    htmlDomProtect.style.fontSize = windowWidth / 7.5+ 'px';
+                }
+            }, false);
+        })();
+
+        window.addEventListener(evt, function() {
+            setTimeout(function () {
+                var htmlDomProtect = document.documentElement;
+                var windowWidth = htmlDomProtect.clientWidth;
+                htmlDomProtect.style.fontSize = windowWidth / 7.5 + 'px';
+            },200);
+        }, false);
+    } else { // pc浏览器
+        var htmlDom = document.documentElement;
+        var windowWidth = htmlDom.clientWidth;
+        var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+        // htmlDom.style.fontSize = windowWidth / 7.5 + 'px';
+        htmlDom.style.fontSize = 375 / 7.5 + 'px';
+    }
+
+</script>
+
+
+<style type="text/css">body{height:100%}.resource-container{min-height:100%;background:#fff}.columnist-head-pic{width:100%;height:5.62rem;display:block}.main{padding-right:0;position:relative;min-height:1px}.main-top{margin-bottom:.35rem}.avatar-collection{float:left;width:1.2rem;height:1.2rem;display:block;cursor:pointer;text-decoration:none}.avatar-collection img{width:100%;height:100%;border-radius:10%}.main-top .title{padding:.1rem 0 0 1.3rem}.btn{cursor:pointer;float:right;margin:.23rem 0 .23rem .16rem;min-width:1rem;padding:.08rem .12rem;text-align:center;border-radius:.4rem}.main-top .follow{border-width:1px;color:#fff;background-color:#42c02e;border-color:#42c02e}.main-top .cancel-follow{border:1px solid #42c02e;color:#42c02e;background-color:transparent}.main .main-top .title .name{display:inline;font-weight:600;vertical-align:middle;text-decoration:none;color:inherit}.main .main-top .info{margin-top:.1rem;padding-left:1.3rem}.trigger-menu{margin-bottom:20px;border-bottom:1px solid #f0f0f0;font-size:0;list-style:none}.trigger-menu li{position:relative;display:inline-block;padding:8px 0;margin-bottom:-1px}.trigger-menu a{padding:13px 20px;font-size:15px;font-weight:700;color:#969696;line-height:25px;text-decoration:none}.trigger-menu li.active{border-bottom:2px solid #646464}.aside{padding:0 .3rem;position:relative;min-height:1px;background-color:#fff}.aside .title{margin-bottom:10px;font-size:14px;color:#969696}.aside .description{position:relative;padding:0 0 .16rem;text-align:left;clear:both;word-break:break-all}.description .desc{padding-top:.1rem}.description img{max-width:100%}.list-container{margin-bottom:20px;list-style:none}.recommend-part{padding:0 .3rem;background-color:#fff;overflow:hidden}.find-more{position:relative;padding:10px 15px;font-size:13px;color:#787878;background-color:#f7f7f7;border:1px solid #dcdcdc;border-radius:4px;margin-bottom:15px}.find-more,.open{display:block;text-decoration:none;text-align:center}.open{cursor:pointer;background-color:transparent;margin-top:.1rem}.desc .hide-state{max-height:400px;overflow:hidden}.columnist-head-info{padding-top:.2rem;overflow:hidden;border-bottom:1px solid #f0f0f0}.columnist-head-title{line-height:1.4;margin-top:.1rem;margin-bottom:.1rem}.columnist-head-data{overflow:hidden;margin-bottom:.18rem;position:relative}.columnist-head-wrapper{padding:0 .3rem;background-color:#fff}.detailHeadData{float:left;line-height:.3rem}.columnist-head-desc{line-height:.36rem;display:block;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;word-break:break-all;overflow:hidden}.columnist-detail-num{padding-right:.1rem}.columnist-detail-num,.columnist-subscriber{float:left;margin-top:.2rem}.columnBorderLeft{padding-left:.1rem;border-left:1px solid #b2b2b2}.item-header{background-color:#fff;padding:0 .3rem;position:relative}.item-header-box{padding:.3rem 0;padding-bottom:0}.border-heihgt{height:.15rem;background:#e0e0e6}.vipBugTipBar{width:100%;height:1rem;box-sizing:border-box;padding:.34rem 0;line-height:.38rem;border-top:.01rem solid #f0f0f0}.icon-sh{height:.24rem;width:.24rem;vertical-align:middle}.icon-hide{transform:rotate(180deg)}.noContentWrapper{padding:0 .3rem;background-color:#fff}.noContentTips{text-align:center;overflow:hidden}.noContentImg{width:2rem;height:2rem;margin-top:.5rem}.noContentWord{margin-top:.2rem;margin-bottom:.5rem}</style><style type="text/css">.resource-item{font-size:0}.listWrapper{position:relative;background-color:#fff}.content-wrapper{margin-left:-.3rem;margin-right:-.3rem;padding:0 .3rem;display:block;text-decoration:none;overflow:hidden;border:0;cursor:pointer}.contentMain{width:100%;box-sizing:border-box;padding:.3rem 0;border-bottom:1px solid #f3f3f3!important;overflow:hidden;display:table;-webkit-tap-highlight-color:transparent}.content-pic-wrapper{overflow:hidden;position:relative;width:1.6rem;height:1.2rem;margin-right:.2rem}.srcType{position:absolute;right:.1rem;top:.7rem;width:.42rem;height:.42rem;z-index:9}.content-pic{float:left;width:1.6rem;height:1.2rem;border-radius:.08rem}.content-info{overflow:hidden;box-sizing:border-box;display:table-cell;vertical-align:middle;width:100%}.content-title{display:block;max-height:.72rem;line-height:.36rem;display:-webkit-box;-webkit-line-clamp:2;word-break:break-all;max-width:5rem}.content-title,.productName{overflow:hidden;text-overflow:ellipsis}.productName{float:left;display:block;word-wrap:break-word;max-width:4.2rem;height:.4rem;line-height:.4rem;white-space:nowrap;margin:.1rem 0}.productNameLong{width:5rem}.newContentType{height:.4rem;line-height:.4rem;padding-top:.02rem;float:right;margin:.1rem 0}.contontType{height:.4rem;line-height:.4rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:5rem;margin-bottom:.2rem;float:right}.content-status{height:.3rem}.content-littleIcon{float:left;height:.24rem;width:.24rem;margin-right:.06rem;margin-top:.03rem}.content-num{float:left;height:.3rem;line-height:.3rem}.content-count{float:left;margin-right:.2rem;height:100%;overflow:hidden}.content-time{float:right;height:.3rem;line-height:.3rem}.activity_text{position:absolute;right:0;top:0;z-index:9;color:#fff;padding:0 .03rem;border-top-right-radius:.08rem}.c_green_normal{background-color:#09bb07}.free-tips{color:#65c131;border:1px solid #65c131;border-radius:.02rem;height:.3rem;box-sizing:border-box;text-align:center;padding:0 .02rem}</style><style type="text/css">.audioStartplayIcon[_v-1304ca1c]{background:url("/img/home_index/home_play_audio_default.png") no-repeat;background-size:100% 100%}.audioPlayingIcon[_v-1304ca1c],.audioPlayStatus .audioStatusIcon[_v-1304ca1c]{background:url("/img/home_index/home_play_audio_pressed.png") no-repeat;background-size:100% 100%}.audioStopStatus .audioStatusIcon[_v-1304ca1c]{background:url("/img/home_index/home_play_audio_default.png") no-repeat;background-size:100% 100%}.un-audioButtonIcon[_v-1304ca1c]{position:absolute;right:.1rem;top:.7rem;width:.42rem;height:.42rem;z-index:9;background:url("/img/home_index/icon_yinpinb.png") no-repeat;background-size:100% 100%}.audioPlayButton[_v-1304ca1c]{width:2.2rem;height:100%;position:absolute;left:0;top:0;z-index:2;margin-left:-.3rem}.audioPlayButton .audioButtonIcon[_v-1304ca1c]{position:absolute;right:.4rem;top:1rem;bottom:.4rem;width:.42rem;height:.42rem;z-index:9}</style><style type="text/css">.aliveStatus[_v-42255448]{text-align:center;height:100%;line-height:.3rem;box-sizing:border-box;padding:0 .1rem;float:left;overflow:hidden;color:#fff}.alivePlaying[_v-42255448]{border:1px solid #e64340;background-color:#e64340;border-radius:.05rem;height:.3rem}.alivePrepare[_v-42255448]{border:1px solid #09bb07;background-color:#09bb07;border-radius:.05rem;height:.3rem}</style><style type="text/css">.dropload-container[_v-85fd667a]{width:100%;-webkit-overflow-scrolling:touch;-webkit-transform:translateZ(0)}.hint[_v-85fd667a]{width:100%;height:.5rem;line-height:.5rem;text-align:center;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}</style><style type="text/css">.pay-wrap-height[_v-97f97b84],.pay-wrap[_v-97f97b84]{height:1.06rem;width:100%}.pay-wrap[_v-97f97b84]{position:fixed;bottom:0;text-align:center;padding:.15rem 0;background:#fff;box-shadow:.01rem .01rem .05rem rgba(0,0,0,.2);border-top:1px solid #dedede;z-index:100;left:0;right:0;margin:auto}.pay-btn[_v-97f97b84]{width:70%;color:#fff;background-color:#09bb07;height:.76rem;border-radius:.1rem;outline:none;cursor:pointer}.sell-stop-wrap[_v-97f97b84]{padding:0;line-height:1.06rem;height:1.06rem;background-color:#b2b2b2;color:#fff;font-size:18px}</style><style type="text/css">.modal[_v-4c161d54]{overflow-x:hidden;overflow-y:auto;background-color:hsla(240,1%,42%,.5);position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;-webkit-overflow-scrolling:touch;outline:0}.modal-dialog[_v-4c161d54]{width:350px;position:absolute;top:50%;left:50%;margin-top:-185px;margin-left:-175px;text-align:center}.modal-content[_v-4c161d54]{box-shadow:0 5px 25px rgba(0,0,0,.1);-webkit-box-shadow:0 5px 25px rgba(0,0,0,.1);border:1px solid rgba(0,0,0,.1);overflow:hidden;z-index:9;position:relative;background-color:#fff;border-radius:6px;background-clip:padding-box;outline:0}.modal-header[_v-4c161d54]{padding:15px 20px 0;border-bottom:none}.modal-header .close[_v-4c161d54]{margin-top:-2px}.close[_v-4c161d54]{font-weight:200;font-size:26px;outline:none;text-shadow:none;float:right}button.close[_v-4c161d54]{padding:0;cursor:pointer;background:transparent;border:0;-webkit-appearance:none}.modal-body[_v-4c161d54]{padding:0;overflow:auto;position:relative}.wx-qr-code[_v-4c161d54]{display:inline-block}.weixin-pay h3[_v-4c161d54]{margin-bottom:20px;color:#787878}.wx-qr-code img[_v-4c161d54]{padding:10px;width:200px;background-color:#fff}.pay-amount[_v-4c161d54]{margin:20px 0;color:#787878}.pay-amount span[_v-4c161d54]{color:#f5a623}</style><style type="text/css">.navigation_menu[_v-137561c4]{position:fixed;bottom:1.89rem;right:0;left:0;height:.6rem;width:1.58rem;background-color:rgba(0,0,0,.5);z-index:1000;border-radius:.5rem 0 0 .5rem;overflow:hidden;margin:auto}.navigation_home_menu[_v-137561c4]{font-size:.24rem}.navi_control[_v-137561c4]{position:absolute;right:0;width:100%;height:100%;border-radius:50%;z-index:2;text-decoration:none;color:#fff;cursor:pointer}.navi_home[_v-137561c4]{width:.24rem;height:.24rem;position:absolute;left:.2rem;top:50%;margin-left:0;margin-top:-.12rem;background:url(http://pc-shop.xiaoe-tech.com/img/common/homeButtonIcon.png) 50%;background-repeat:no-repeat;background-size:100%}.navi_home_txt[_v-137561c4]{text-align:right;padding-right:.1rem;line-height:.6rem;font-size:.24rem}</style><style type="text/css">#menu_wrapper{width:130px;padding:10px 3px;background:#fff;display:none;position:absolute;left:0;top:0;border-radius:5px;box-shadow:0 0 10px #333}#menu_wrapper li{height:28px;line-height:28px;font-size:14px;text-align:left;list-style:none;padding-left:30px}#menu_wrapper li:hover{background:#2a75ed;color:#fff}</style><style type="text/css">.one_to_many_wrap{position:fixed;height:100%;width:100%;max-width:480px;top:0;right:0;left:0;margin:auto;background-color:#efeff4;z-index:1000}.source_head{padding:.45rem .3rem .3rem;background:#fff}.one_to_more_title{line-height:.4rem;margin-bottom:.2rem}.resource-hd-main{background-color:#fff;padding:.3rem;padding-bottom:0}.column-box{background-color:#fff;padding:0 .3rem}</style><style type="text/css">.text_indent[_v-3e927e96]{text-indent:-.4em}.columnist-num[_v-3e927e96]{float:left;padding-right:.1rem}.columnist-subscriber[_v-3e927e96]{float:left}.columnBorderLeft[_v-3e927e96]{padding-left:.1rem;border-left:1px solid #b2b2b2}.columnist-price[_v-3e927e96]{float:right}.columnist-num-wrapper span[_v-3e927e96]{height:.3rem;line-height:.3rem}.content-wrapper[_v-3e927e96]{margin-left:-.3rem;margin-right:-.3rem;padding:0 .3rem;display:block;text-decoration:none;overflow:hidden}.contentMain[_v-3e927e96]{width:100%;box-sizing:border-box;padding:.3rem 0;border-bottom:1px solid #f3f3f3;overflow:hidden;display:table;outline:0}.content-pic-wrapper[_v-3e927e96]{overflow:hidden;position:relative;width:1.6rem;height:1.2rem;margin-right:.2rem}.content-pic[_v-3e927e96]{float:left;width:1.6rem;height:1.2rem;border-radius:.08rem}.content-info[_v-3e927e96]{overflow:hidden;box-sizing:border-box;display:table-cell;vertical-align:middle;width:100%}.columnist-title[_v-3e927e96]{display:block;max-height:.72rem;line-height:.36rem;display:-webkit-box;-webkit-line-clamp:2}.columnist-desc[_v-3e927e96],.columnist-title[_v-3e927e96]{overflow:hidden;word-break:break-all;text-overflow:ellipsis}.columnist-desc[_v-3e927e96]{height:.4rem;line-height:.4rem;display:-webkit-box;-webkit-line-clamp:1;margin-bottom:.2rem}.columnIcon[_v-3e927e96]{display:inline-block;height:.3rem;width:.3rem}.columnIcon>img[_v-3e927e96]{width:100%;height:100%}.bonus_price[_v-3e927e96]{text-decoration:line-through}.bonusPriceTag[_v-3e927e96]{font-size:.16rem;height:.2rem;padding:.05rem;line-height:.2rem;border:1px solid #e64340;border-radius:.06rem;text-align:center;margin-right:.06rem;margin-top:-.02rem}.bonusPriceWrapper[_v-3e927e96]{margin-top:-.1rem}</style><style type="text/css">*{margin:0;border:0;padding:0}body{background-color:#69696b;height:100%;overflow-y:scroll;font-family:PingFangSC,Helvetica,Tahoma,Arial,Hiragino Sans GB,Hiragino Sans GB W3,Microsoft Yahei,STXihei,STHeiti,Heiti,SimSun,sans-serif!important}.vue_common,body{box-sizing:border-box}*,.vue_common *,:after,:before{box-sizing:inherit;word-wrap:break-word;word-break:break-all}a{text-decoration:none;color:inherit;cursor:pointer;-webkit-touch-callout:none}button{user-select:none;-webkit-user-select:none}a,button,div,input,textarea{-webkit-tap-highlight-color:rgba(0,0,0,0)}.t1{font-size:.32rem}.t2{font-size:.28rem}.t3{font-size:.24rem}.t4{font-size:.22rem}.t5{font-size:.32rem}.t6{font-size:.36rem}.t7{font-size:.4rem}.t8{font-size:.2rem}.c0_white{color:#fff}.c1{color:#09bb07}.c2{color:#353535}.c3{color:#888}.c4{color:#576b95}.c5{color:#e64340}.c6{color:#b2b2b2}.c7{color:#2f96e6}.c8{color:#757575}.c9{color:#32cc6e}.c10{color:#3cca72}.container{min-height:100%;background:#e0e0e6}.container,.container-width-limit{width:100%;max-width:480px;margin:auto}.clearfix:after{content:"";display:table;clear:both}.clearfix{zoom:1}.PressGreenBg:active{background-color:rgba(9,187,7,.2)!important;border-color:rgba(9,187,7,.2)!important}.pressGreyBg:active{background-color:hsla(0,0%,49%,.2)!important;border-color:hsla(0,0%,49%,.2)!important}.pressBlueBg:active{background-color:rgba(43,143,247,.2)!important;border-color:rgba(43,143,247,.2)!important}.pressActive:active{opacity:.5}.navi_href{height:100%;width:.64rem;position:absolute}.navi_hrefIcon{width:.3rem;height:.3rem;position:absolute;left:50%;margin-left:-.15rem;top:.2rem}.navi_hrefWord{font-size:.18rem;color:#fff;text-align:center;margin-top:.6rem}.navi_href:first-child{left:.3rem}.navi_href:nth-child(2){left:1rem}.navi_href:nth-child(3){left:1.7rem}.navi_href:nth-child(4){left:2.6rem}.naviControl_icon{width:.3rem;height:.3rem;position:absolute;left:50%;top:50%;margin-left:-.15rem;margin-top:-.15rem}.navi_close{animation:naviClose .2s 1;-webkit-animation:naviClose .2s 1}.navi_open{animation:naviOpen .2s 1;-webkit-animation:naviOpen .2s 1}@keyframes naviClose{0%{width:3.4rem}to{width:1rem}}@keyframes naviOpen{0%{width:1rem}to{width:3.4rem}}.navi_openIcon{background:url("/images/navi/nav_open.png") 50%;background-repeat:no-repeat;background-size:100%}.navi_closeIcon{background:url("/images/navi/nav_close.png") 50%;background-repeat:no-repeat;background-size:100%}.select{-webkit-touch-callout:initial;-webkit-user-select:initial;-moz-user-select:initial;-ms-user-select:initial;user-select:auto}.un_select{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.desc-mb{position:absolute;height:100%;width:100%;top:0;left:0}</style>
+<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.8/skins/default/aliplayer-min.css" />
+<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.8.8/aliplayer-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="aliplayercomponents-1.0.5.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container resource-container t2">
+    <div class="row clearfix">
+        <div class="main">
+            <div class="columnist-head-pic-div"><img class="columnist-head-pic" src="http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/cmVzb3VyY2UtY291cnNlUGFja2FnZS04MTQzNjI2OA.jpg"
+                    style="height: 360px;">
+                </div>
+            <div class="columnist-head-wrapper">
+                <div class="columnist-head-info">
+                    <div class="t1 c2 columnist-head-title"><span>女王交易系统课</span></div>
+                    <div class="columnist-head-data">
+                        <div class="detailHeadData">
+                            <div class="t3 c2 columnist-head-desc"> 我认真教，你认真学，共同奋战人气龙头！！！ </div>
+                            <div class="clearfix"><span class="columnist-detail-num t4 c3"> 已更新27期 </span>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+            <div class="aside">
+                <div class="description js-description">
+                    <div class="desc">
+                        <div>
+                            <p><strong>本次课程内容分为五部分：</strong></p>
+                            <p><br></p>
+                            <p><strong>第一：基础课程，初识人气龙头，什么是人气龙头，人气龙头的运行轨迹是怎样的？</strong></p>
+                            <p><strong>&nbsp;</strong></p>
+                            <p><strong>第二：进阶课程是对交易宏观逻辑的构建，人气龙头产生的宏观逻辑：指数状态、情绪周期、题材级别进行了详细的描述。</strong></p>
+                            <p><strong>&nbsp;</strong></p>
+                            <p><strong>第三：基于人气龙头详细阐述我的交易模式、案例讲解，详细拆解如何复盘、复盘的标准流程，如何锁定交易目标。</strong></p>
+                            <p><strong>&nbsp;</strong></p>
+                            <p><strong>第四：基于人气龙头如何进行仓位管理策略、止盈策略、止损策略，风险规避策略。</strong></p>
+                            <p><strong>&nbsp;</strong></p>
+                            <p><strong>第五：自我交易心理的剖析，我们容易犯的哪些错误。</strong></p>
+                            <p><strong><br></strong></p>
+                            <p><strong>女王系统课不予退费，三思而后行！</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="top" name="top"></span>
+            <div class="prism-player" id="player-con"></div>
+            <div class="border-heihgt" style="display: none;"></div>
+            <div class="item-header" style="display: none;">
+                <div class="item-header-box t3 c2 clearfix"><span class="t1 c2" style="float: left;" id="cursorTitle">女王视频播放</span><span style="float: right;"><a href="javascript:void(0)" onclick="closePlay()">关闭视频</a></span></div>
+            </div>
+            <script>
+                var player ,player_hide = true;
+                function play(play_url,title){
+                    
+                    if(player_hide){
+                        $(".columnist-head-pic-div").hide().next().hide().next().hide();
+                        $("#player-con").show().next().show().next().show();
+                        player_hide=false;
+                    }
+                    $("#gotoTop")[0].click();
+                    if(player){
+                        playlistComponent = player.getComponent("PlaylistComponent");
+                        if(playlistComponent){
+                            if(!playlistComponent.o_playVideo){
+                                playlistComponent.o_playVideo=playlistComponent.playVideo;
+                                playlistComponent.playVideo=function(player,defaultPlayIndex){
+                                    playlistComponent.o_playVideo(player,defaultPlayIndex);
+                                    $("#cursorTitle").text(playlistComponent.playlist[defaultPlayIndex].name);
+                                }
+                            }
+                            defaultPlayIndex = playlistComponent.playlist.findIndex(item => item.source === play_url)
+                            if ( defaultPlayIndex <0 ){
+                                playlistComponent.playlistTip("错误，播放列表中找不到指定视频",player._el);
+                                return;
+                            }
+                            if(playlistComponent.playingVideoIndex == defaultPlayIndex){
+                                player.play();
+                            }else{
+                                playlistComponent.playVideo(player,defaultPlayIndex);
+                            }
+                        }else{
+                            player.loadByUrl(play_url);
+                            $("#cursorTitle").text(title);
+                        }
+                        return;
+                    }
+                    $("#cursorTitle").text(title);
+                    var playOptions = {
+                        "id": "player-con",
+                        "source": play_url,
+                        "width": "100%",
+                        "height": (window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth)*11/16 + "px" ,
+                        "autoplay": true,
+                        "isLive": false,
+                        "cover": "",
+                        "rePlay": false,
+                        "playsinline": true,
+                        "preload": true,
+                        "controlBarVisibility": "hover",
+                        "useH5Prism": true,
+                        components:[{
+                        name: 'RateComponent',
+                        type: AliPlayerComponent.RateComponent
+                        }]
+                    };
+                    if(typeof playList != "undefined" && playList.length > 0){
+                        playOptions.components.push({
+                            name: 'PlaylistComponent',
+                            type: AliPlayerComponent.PlaylistComponent,
+                            args: [playList]
+                        });
+                    }
+                    player = new Aliplayer(playOptions, function (player) {
+                        console.log("The player is created");
+                    }
+                    );
+                }
+                function closePlay(){
+                    player.pause();
+                    $("#player-con").hide().next().hide().next().hide();
+                    $(".columnist-head-pic-div").show().next().show().next().show();
+                    player_hide = true;
+                }
+            </script>
+            <div class="border-heihgt"></div>
+            <div class="item-header">
+                <div class="item-header-box t3 c2 clearfix"><span class="t1 c2">课程列表</span></div>
+            </div>
+            <div class="content-list">
+                <div class="list-container recommend-part content-list" >
+                    <div id="loadColumnResource" class="dropload-container">
+                        <div class="resource-item" id="items">
+                          
+                        <script>
+                            //获取数据 方法1
+                            //curl 'http://pc-shop.xiaoe-tech.com/appz6M3xIrb7451/payRecords' -H 'Connection: keep-alive' -H 'Pragma: no-cache' -H 'Cache-Control: no-cache' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' -H 'Accept-Language: zh-CN,zh;q=0.9' -H 'Cookie: _ga=GA1.2.1867201755.1586969115; _gid=GA1.2.2048015345.1586969115; tgw_l7_route=2d717cf374b1dfdf3a7462dcd4d4f62c; laravel_session=eyJpdiI6IkhodEdPakFxQktcL1N6WWgxdXQ1aVJ3PT0iLCJ2YWx1ZSI6IituSFV0Nk5rbnlPZnVtRjgrQzd4TFNtZXZUT2FFaVBxK0N4dVFMOVpQTmlvR1lZOWMzRmtJYXJvQ2tlckVZZytTQjFTd2ZIajM2VkhkOFU0QVdnVE13PT0iLCJtYWMiOiIwYzI5NmVkNDY2Yzk0NzMwNjkzM2Q5ZTQ3YWY5YWQ5Njc4ZWVhODUyMGNjODg1MWNmZWQxZjBjNjQ0YjJiM2FlIn0%3D' --compressed --insecure
+                            //http://pc-shop.xiaoe-tech.com/appz6M3xIrb7451/payRecords
+                            // var data={}
+                            // data["order_by"]="created_at:desc";
+                            // data["page_index"]=0;
+                            // data["page_size"]=100;
+                            // var g_data={length:0}
+                            // function getCourses(pid){
+                            //     g_data[pid].courses={length:0};
+                            //     data["resource_id"]=pid;
+                            //     this.$.post("/appz6M3xIrb7451/open/column.resourcelist.get/2.0", {data},function(d){
+
+                            //         for (var i = 0; i < d.data.length; i++) { 
+                            //             id = d.data[i].id; 
+                            //             title=d.data[i].title.replace("视频","课程"); 
+                            //             d.data[i].title = title;
+                            //             console.log("获取 " + title  + " [pid="+pid+"] 播放地址"); 
+                            //             g_data[pid].courses[id] = d.data[i]; 
+                            //             if (d.data[i].resource_type == 3) { 
+                            //                 this.$.post("/appz6M3xIrb7451/open/video.detail.get/1.0", "data[resource_id]=" + id, function (d1) { 
+                            //                     pid = d1.data.products[0].product_id; 
+                            //                     g_data[pid].courses[d1.data.id].play_url = d1.data.video_hls.replace("vod2.xiaoe-tech.com","1252524126.vod2.myqcloud.com").split("?")[0]; 
+                            //                 }) 
+                            //             } else { 
+                            //                 g_data[pid].courses[id].play_url = "https://appz6m3xirb7451.h5.xiaoeknow.com/" + id+".m3u8"; 
+                            //             } 
+                            //             g_data[pid].courses.length = g_data[pid].courses.length+1; 
+                            //         }
+                            //     });
+                            // }
+                            // //获取所有的课程
+                            // this.$.post("/appz6M3xIrb7451/open/purchase.list.get/1.0",{data},function(json){
+                            //     data["order_by_array"]=["order_weight:desc"];
+                            //     data["state"]="0" ;
+                            //     data["resource_types"]=[1,2,3,4];
+                            //     if(json.code==0){
+                            //         data["order_by"]="start_at:desc";
+                            //         for(var i=0;i<json.data.length;i++){
+                            //             pid = json.data[i].id;
+                            //             title = json.data[i].title;
+                            //             g_data[pid]=json.data[i];
+                            //             g_data.length = g_data.length+1;
+                            //             getCourses(pid);
+                            //         }
+                            //     }
+                            // });
+                            // var numberCN={"一":1,"二":2,"三":3,"四":4,"五":5,"六":6,"七":7,"八":8,"九":9,"十":10,"十一":11,"十二":12,"十三":13,"十四":14,"十五":15,"上":11,"中":12,"下":13,"Ⅰ":1,"Ⅱ":2,"Ⅲ":3,"Ⅳ":4,"Ⅴ":5,"II":2,"III":3,"VI":6}
+                            // function sortdate(a,b){
+                            //     aDate = a.created_at.split(" ")[0]
+                            //     bDate = b.created_at.split(" ")[0]
+                            //     if(aDate > bDate){
+                            //         return 1;
+                            //     }else if(aDate < bDate){
+                            //         return -1;
+                            //     }else{
+                            //         aNameArr = a.title.match(/(.*)第(.*)章(.*)之/)||[];
+                            //         bNameArr = b.title.match(/(.*)第(.*)章(.*)之/)||[];
+                            //         if(aNameArr[1] > bNameArr[1]){
+                            //             return 1;
+                            //         }else if(aNameArr[1] < bNameArr[1]){
+                            //             return -1;
+                            //         }
+                            //         aName = parseInt(numberCN[aNameArr[2]]);
+                            //         bName = parseInt(numberCN[bNameArr[2]]);
+                            //         aNameExt = parseInt(numberCN[aNameArr[3]]);
+                            //         bNameExt = parseInt(numberCN[bNameArr[3]]);
+                            //         if (aName > bName){
+                            //             return 1;
+                            //         }else if (aName < bName){
+                            //             return -1;
+                            //         }else{
+                            //             if (aNameExt > bNameExt){
+                            //                 return 1;
+                            //             }else if (aNameExt < bNameExt){
+                            //                 return -1;
+                            //             }else{
+                            //                 return 0;
+                            //             }
+                            //         }
+                            //     }
+                            // }
+                            // var items=[];
+                            // for(var key in g_data){
+                            //     if(key != "length"){
+                            //         courses=[];
+                            //         for(var c in g_data[key].courses){
+                            //             if(c!="length"){
+                            //                 courses.push(g_data[key].courses[c]);
+                            //             }
+                            //         }
+                            //         courses.sort(sortdate);
+                            //         g_data[key] .courses = courses;
+                            //         items.push(g_data[key]);
+                            //     } 
+                            // }
+                            //items 保存到文件list.json
+                            //JSON.stringify(items)
+                            //获取数据方法2： 使用nginx 做代理，直接 ajax请求
+                            
+                            var htmlstr="";
+                            $.getJSON("list.json",function(list){
+                                playList = [];
+                                for(var i = 0;i<list.length;i++){
+                                    courses = list[i].courses;
+                                    for(var j=0;j<courses.length;j++){
+                                        item = courses[j];
+                                        title = list[i].title + " - " + item.title
+                                        playList.push({name:item.title,source:item.play_url});
+                                        //video.html?play_url='+encodeURIComponent(item.play_url)+'&title='+encodeURIComponent(item.title)+'
+                                        htmlstr += '<div class="listWrapper"><a href="javascript:void(0);" onclick="play(\''+item.play_url+'\',\''+item.title+'\')"';
+                                        htmlstr += '        class="content-wrapper pressWrapper pressGreyBg">';
+                                        htmlstr += '       <div class="contentMain">';
+                                        htmlstr += '         <div class="content-pic-wrapper"><img';
+                                        htmlstr += '                      src="http://pc-shop.xiaoe-tech.com/img/home_index/icon_Live.png" class="srcType"> <img';
+                                        htmlstr += '              src="'+item.img_url_compressed+'"';
+                                        htmlstr += '                class="content-pic"></div>';
+                                        htmlstr += '          <div class="content-info"><span';
+                                        htmlstr += '              class="content-title t2 c2">'+title+'</span>';
+                                        htmlstr += '        <div class="productTitleWrapper">';
+                                        htmlstr += '        <div class="contontType"></div>';
+                                        htmlstr += '      <div class="productName t4 c3" style="display: none;">';
+                                        htmlstr += '  </div> <span class="newContentType t4 c5"';
+                                        htmlstr += '        style="display: none;">￥0 </span>';
+                                        htmlstr += '   <div class="clearfix"></div>';
+                                        htmlstr += '  </div>';
+                                        htmlstr += '  <div class="content-status">';
+                                        htmlstr += '      <div>';
+                                        htmlstr += '        <div class="content-count"><img';
+                                        htmlstr += '              src="http://pc-shop.xiaoe-tech.com/img/home_index/icon_playNum.png"';
+                                        htmlstr += '               class="content-littleIcon">';
+                                        htmlstr += '         <div class="content-num t4 c3"> '+item.view_count+' </div>';
+                                        htmlstr += '       </div>';
+                                        htmlstr += '      <div class="content-count"><img';
+                                        htmlstr += '              src="http://pc-shop.xiaoe-tech.com/img/home_index/icon_talkNum.png"';
+                                        htmlstr += '            class="content-littleIcon">';
+                                        htmlstr += '      <div class="content-num t4 c3"> '+item.comment_count+' </div>';
+                                        htmlstr += '   </div>';
+                                        htmlstr += '  </div> <span class="content-time t4 c3">'+item.created_at+'</span>';
+                                        htmlstr += '  </div>';
+                                        htmlstr += '</div>';
+                                        htmlstr += ' </div>';
+                                        htmlstr += ' </a></div>';
+                                        htmlstr += ' </div>';
+                                    }
+                                }
+                                $("#items").html(htmlstr);
+                            })
+                        </script>
+                        
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </div>
+    <div _v-137561c4 class="navigation_menu navigation_home_menu t2" style="transform: translateX(200.5px);"><a _v-137561c4
+            class="navi_control" id="gotoTop" href="#top">
+            <div _v-137561c4 class="navi_home"></div>
+            <div _v-137561c4 class="navi_home_txt t3">回到前面</div>
+        </a></div>
+</div>
+
+</body></html>
