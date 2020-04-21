@@ -26,15 +26,14 @@ $.getJSON("list.json",function(data){
 ```
     将文件存在到文件，比如 download_video.sh
 ``` shell
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/99c0c2025285890796247577648/drm/v.f230.m3u8" -f mp3 -vn "001-【基础课程】第一章之什么是人气龙头.mp3"
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e9112a595285890796248679104/drm/v.f230.m3u8" -f mp3 -vn "002-【基础课程】第二章上之人气龙头的生命周期.mp3"
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e8d7a4605285890796248643489/drm/v.f230.m3u8" -f mp3 -vn "003-【基础课程】第二章下之人气龙头和板块之间的关系.mp3"
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e6ce23655285890796248589359/drm/v.f230.m3u8" -f mp3 -vn "004-【基础课程】第三章Ⅰ之人气龙头起步.mp3"
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e6cc8f005285890796248586735/drm/v.f230.m3u8" -f mp3 -vn "005-【基础课程】第三章Ⅱ之人气龙头的分歧.mp3"
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e4862c5c5285890796248490557/drm/v.f230.m3u8" -f mp3 -vn "006-【基础课程】第三章Ⅲ之人气龙头中继.mp3"
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e463a9195285890796248473760/drm/v.f230.m3u8" -f mp3 -vn "007-【基础课程】第三章Ⅳ之人气龙头反包.mp3"
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e3f9c2fc5285890796248418368/drm/v.f230.m3u8" -f mp3 -vn "008-【基础课程】第四章上之指数周期共振.mp3"
-ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e18fcc525285890796248303554/drm/v.f230.m3u8" -f mp3 -vn "009-【基础课程】第四章下之题材量级的辨别.mp3"
+ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/99c0c2025285890796247577648/drm/v.f230.m3u8" -vcodec copy -acodec copy -absf aac_adtstoasc "001-【基础课程】第一章之什么是人气龙头.mp4"
+ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e9112a595285890796248679104/drm/v.f230.m3u8" -vcodec copy -acodec copy -absf aac_adtstoasc "002-【基础课程】第二章上之人气龙头的生命周期.mp4"
+ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e8d7a4605285890796248643489/drm/v.f230.m3u8" -vcodec copy -acodec copy -absf aac_adtstoasc "003-【基础课程】第二章下之人气龙头和板块之间的关系.mp4"
+ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e6ce23655285890796248589359/drm/v.f230.m3u8" -vcodec copy -acodec copy -absf aac_adtstoasc "004-【基础课程】第三章Ⅰ之人气龙头起步.mp4"
+ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e6cc8f005285890796248586735/drm/v.f230.m3u8" -vcodec copy -acodec copy -absf aac_adtstoasc "005-【基础课程】第三章Ⅱ之人气龙头的分歧.mp4"
+ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e4862c5c5285890796248490557/drm/v.f230.m3u8" -vcodec copy -acodec copy -absf aac_adtstoasc "006-【基础课程】第三章Ⅲ之人气龙头中继.mp4"
+ffmpeg -i "http://1252524126.vod2.myqcloud.com/9764a7a5vodtransgzp1252524126/e463a9195285890796248473760/drm/v.f230.m3u8" -vcodec copy -acodec copy -absf aac_adtstoasc "007-【基础课程】第三章Ⅳ之人气龙头反包.mp4"
+
 ```
 
 ## 执行转存脚本 
