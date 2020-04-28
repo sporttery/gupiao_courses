@@ -642,6 +642,27 @@
                 "zb_start_at": "2020-04-22 20:00:00",
                 "jump_url": "https://appz6m3xirb7451.h5.xiaoeknow.com/content_page/eyJ0eXBlIjoxMiwicmVzb3VyY2VfdHlwZSI6NCwicmVzb3VyY2VfaWQiOiJsXzVlYTAzMGM0OTcyZmZfZHdwcUpIOGwiLCJwcm9kdWN0X2lkIjoiIiwiYXBwX2lkIjoiYXBwejZNM3hJcmI3NDUxIiwiZXh0cmFfZGF0YSI6MH0?entry=3&entry_type=0",
                 "play_url": "https://appz6m3xirb7451.h5.xiaoeknow.com/l_5ea030c4972ff_dwpqJH8l.m3u8"
+            },
+            {
+                "id": "l_5ea7d6fe9fa1a_G0erU1tr",
+                "title": "人气龙头卖点如何把握？",
+                "resource_type": 4,
+                "img_url": "http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/cmVzb3VyY2UtY291cnNlQWxpdmUtMjAwODk2OTE.png",
+                "img_url_compressed": "http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/compress/414312cmVzb3VyY2UtY291cnNlQWxpdmUtMjAwODk2OTE.png",
+                "created_at": "2020-04-28 15:14:00",
+                "start_at": "已结束",
+                "comment_count": 167,
+                "is_available": -1,
+                "view_count": 849,
+                "srcType": 4,
+                "desc": "",
+                "summary": "",
+                "availableInfo": {
+                    "piecePrice": 0
+                },
+                "zb_start_at": "2020-04-28 15:14:00",
+                "jump_url": "https://appz6m3xirb7451.h5.xiaoeknow.com/content_page/eyJ0eXBlIjoxMiwicmVzb3VyY2VfdHlwZSI6NCwicmVzb3VyY2VfaWQiOiJsXzVlYTdkNmZlOWZhMWFfRzBlclUxdHIiLCJwcm9kdWN0X2lkIjoiIiwiYXBwX2lkIjoiYXBwejZNM3hJcmI3NDUxIiwiZXh0cmFfZGF0YSI6MH0?entry=3&entry_type=0",
+                "play_url": "https://appz6M3xIrb7451.h5.xiaoeknow.com/l_5ea7d6fe9fa1a_G0erU1tr.m3u8"
             }
         ]
     },
