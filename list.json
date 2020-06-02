@@ -758,7 +758,98 @@
                 "zb_start_at": "2020-05-20 20:02",
                 "jump_url": "https://appz6M3xIrb7451.h5.xiaoeknow.com/content_page/eyJ0eXBlIjoyLCJyZXNvdXJjZV90eXBlIjo0LCJyZXNvdXJjZV9pZCI6ImxfNWVjNTFiNGI3MTIxNl9UbWRFMHBGZiIsInByb2R1Y3RfaWQiOiJwXzVlNmI1ZTJkNDg2NmJfcEJMUktKamgiLCJhcHBfaWQiOiJhcHB6Nk0zeElyYjc0NTEifQ"
                 ,"play_url": "https://appz6M3xIrb7451.h5.xiaoeknow.com/l_5ec51b4b71216_TmdE0pFf.m3u8"
-            }
+            }, 
+            {
+                    "resource_type": 4, 
+                    "id": "l_5ecb8cc34adb7_pQkHjj6v", 
+                    "title": "人气龙头低吸交易系统的综合应用1", 
+                    "img_url_compressed": "http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/compress/414312cmVzb3VyY2UtY291cnNlQWxpdmUtMjAwODk2OTE.png", 
+                    "img_url": "http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/compress/414312cmVzb3VyY2UtY291cnNlQWxpdmUtMjAwODk2OTE.png", 
+                    "view_count": 750, 
+                    "comment_count": 117, 
+                    "payment_type": 3, 
+                    "piece_price": 0, 
+                    "start_at": "2020-05-25 20:00", 
+                    "created_at": "2020-05-25 22:00:00", 
+                    "updated_at": "2020-05-25 21:09:51", 
+                    "zb_start_at": "2020-05-25 22:00:00",
+                    "m3u8_url": "", 
+                    "audio_compress_url": "", 
+                    "audio_url": "", 
+                    "order_weight": 73, 
+                    "is_try": 0, 
+                    "is_try_source": false, 
+                    "learn_progress": 100, 
+                    "jump_url": "/content_page/eyJ0eXBlIjoyLCJyZXNvdXJjZV90eXBlIjo0LCJyZXNvdXJjZV9pZCI6ImxfNWVjYjhjYzM0YWRiN19wUWtIamo2diIsInByb2R1Y3RfaWQiOiJwXzVlNmI1ZTJkNDg2NmJfcEJMUktKamgiLCJhcHBfaWQiOiJhcHB6Nk0zeElyYjc0NTEifQ", 
+                    "interval_start_at": "已结束"
+                    ,"play_url": "https://appz6M3xIrb7451.h5.xiaoeknow.com/l_5ecb8cc34adb7_pQkHjj6v.m3u8"
+            }, 
+            {
+                    "resource_type": 4, 
+                    "id": "l_5ece5567efe4a_b8llmYgh", 
+                    "title": "周期与周期之间的交接", 
+                    "view_count": 947, 
+                    "img_url_compressed": "http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/compress/414312cmVzb3VyY2UtY291cnNlQWxpdmUtMjAwODk2OTE.png", 
+                    "img_url": "http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/compress/414312cmVzb3VyY2UtY291cnNlQWxpdmUtMjAwODk2OTE.png", 
+                    "comment_count": 94, 
+                    "payment_type": 3, 
+                    "piece_price": 0, 
+                    "start_at": "2020.05.27 20:00", 
+                    "created_at": "2020-05-27 22:00:18", 
+                    "updated_at": "2020-05-27 21:25:01", 
+                    "m3u8_url": "", 
+                    "audio_compress_url": "", 
+                    "audio_url": "", 
+                    "order_weight": 74, 
+                    "is_try": 0, 
+                    "is_try_source": false, 
+                    "availableInfo": {
+                            "paymentType": 3, 
+                            "productId": "p_5e6b5e2d4866b_pBLRKJjh", 
+                            "resourceType": 4, 
+                            "resourceId": "l_5ece5567efe4a_b8llmYgh", 
+                            "piecePrice": 0, 
+                            "available": true
+                    }, 
+                    "learn_progress": 100, 
+                    "jump_url": "/content_page/eyJ0eXBlIjoyLCJyZXNvdXJjZV90eXBlIjo0LCJyZXNvdXJjZV9pZCI6ImxfNWVjZTU1NjdlZmU0YV9iOGxsbVlnaCIsInByb2R1Y3RfaWQiOiJwXzVlNmI1ZTJkNDg2NmJfcEJMUktKamgiLCJhcHBfaWQiOiJhcHB6Nk0zeElyYjc0NTEifQ", 
+                    "interval_start_at": "已结束"
+                    ,"zb_start_at": "2020-05-27 22:00:18"
+                    ,"play_url": "https://appz6M3xIrb7451.h5.xiaoeknow.com/l_5ece5567efe4a_b8llmYgh.m3u8"
+            },
+            {
+                "resource_type": 4, 
+                "id": "l_5ed4ed29a4da4_R1cc2ATq", 
+                "title": "人气龙头实战案例精讲2", 
+                "img_url_compressed": "http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/compress/414320cmVzb3VyY2UtY291cnNlQWxpdmUtMjAwODk2OTE.png", 
+                "img_url": "http://wechatapppro-1252524126.file.myqcloud.com/appz6M3xIrb7451/image/compress/414320cmVzb3VyY2UtY291cnNlQWxpdmUtMjAwODk2OTE.png", 
+                "view_count": 717, 
+                "comment_count": 116, 
+                "payment_type": 3, 
+                "piece_price": 0, 
+                "start_at": "2020.06.01 20:01", 
+                "created_at": "2020-06-01 22:01:17", 
+                "updated_at": "2020-06-01 21:21:10", 
+                "m3u8_url": "", 
+                "audio_compress_url": "", 
+                "audio_url": "", 
+                "order_weight": 75, 
+                "is_try": 0, 
+                "is_try_source": false, 
+                "availableInfo": {
+                        "paymentType": 3, 
+                        "productId": "p_5e6b5e2d4866b_pBLRKJjh", 
+                        "resourceType": 4, 
+                        "resourceId": "l_5ed4ed29a4da4_R1cc2ATq", 
+                        "piecePrice": 0, 
+                        "available": true
+                }, 
+                "learn_progress": 100, 
+                "jump_url": "/content_page/eyJ0eXBlIjoyLCJyZXNvdXJjZV90eXBlIjo0LCJyZXNvdXJjZV9pZCI6ImxfNWVkNGVkMjlhNGRhNF9SMWNjMkFUcSIsInByb2R1Y3RfaWQiOiJwXzVlNmI1ZTJkNDg2NmJfcEJMUktKamgiLCJhcHBfaWQiOiJhcHB6Nk0zeElyYjc0NTEifQ", 
+                "interval_start_at": "已结束"
+                ,"zb_start_at": "2020-06-01 22:01:17"
+                    ,"play_url": "https://appz6M3xIrb7451.h5.xiaoeknow.com/l_5ed4ed29a4da4_R1cc2ATq.m3u8"
+        }
         ]
     },
     {
